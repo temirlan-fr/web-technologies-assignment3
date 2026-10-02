@@ -9,7 +9,7 @@ body {
     color: #173b2b;
 }
 
-.typography-page {
+.layout-page {
     width: 90%;
     max-width: 1000px;
     margin: 0 auto;
@@ -22,7 +22,6 @@ body {
 }
 
 h1 {
-    margin: 20px 0;
     color: #123d2b;
     font-size: 48px;
 }
@@ -34,70 +33,71 @@ h1 {
     line-height: 1.5;
 }
 
-.screen-info {
+.boxes {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     margin-top: 50px;
 }
 
-.info-card {
-    flex: 1;
-    padding: 20px;
+.box {
+    flex: 1 1 calc(33.333% - 20px);
+    min-height: 220px;
+    padding: 25px;
     background-color: #f7faf7;
     border: 1px solid #b8cbbd;
 }
 
-.info-card span {
-    color: #5a7964;
-    font-size: 14px;
-}
-
-.info-card h2 {
-    margin: 35px 0 10px;
+.box h2 {
+    margin-top: 100px;
     color: #174a32;
     font-size: 26px;
 }
 
-.info-card p {
+.box p {
     color: #315441;
-    font-size: 15px;
 }
 
-/* Tablet */
+/* Tablet: two boxes in first row, one box in second row */
 
-@media (max-width: 1199px) {
-    h1 {
-        font-size: 40px;
+@media (max-width: 1199px) and (min-width: 768px) {
+    .box {
+        flex: 1 1 calc(50% - 20px);
     }
 
-    .description {
-        font-size: 18px;
+    .box:last-child {
+        flex-basis: 100%;
     }
 }
 
-/* Mobile */
+/* Mobile: boxes are stacked vertically */
 
 @media (max-width: 767px) {
-    .typography-page {
+    .layout-page {
         padding: 30px 0;
     }
 
     h1 {
-        font-size: 32px;
+        font-size: 34px;
     }
 
     .description {
         font-size: 16px;
     }
 
-    .screen-info {
+    .boxes {
         flex-direction: column;
         gap: 15px;
         margin-top: 30px;
     }
 
-    .info-card h2 {
-        margin-top: 20px;
+    .box {
+        min-height: 160px;
+        flex-basis: auto;
+    }
+
+    .box h2 {
+        margin-top: 50px;
         font-size: 22px;
     }
 }
