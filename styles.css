@@ -58,7 +58,6 @@ h1 {
     color: #315441;
 }
 
-/* Tablet: two boxes in first row, one box in second row */
 
 @media (max-width: 1199px) and (min-width: 768px) {
     .box {
@@ -70,7 +69,6 @@ h1 {
     }
 }
 
-/* Mobile: boxes are stacked vertically */
 
 @media (max-width: 767px) {
     .layout-page {
@@ -100,4 +98,33 @@ h1 {
         margin-top: 50px;
         font-size: 22px;
     }
+}
+
+.bootstrap-section {
+    margin-top: 70px;
+    padding: 50px 5%;
+    background-color: #dce9df;
+}
+
+.bootstrap-section h2 {
+    margin: 20px 0;
+    color: #123d2b;
+    font-size: 40px;
+}
+
+.column-box {
+    min-height: 200px;
+    margin-top: 30px;
+    padding: 25px;
+    background-color: #f7faf7;
+    border: 1px solid #b8cbbd;
+}
+
+.column-box h3 {
+    margin-top: 70px;
+    color: #174a32;
+}
+
+.column-box p {
+    color: #315441;
 }
