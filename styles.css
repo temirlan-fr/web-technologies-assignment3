@@ -128,3 +128,153 @@ h1 {
 .column-box p {
     color: #315441;
 }
+
+.custom-navbar {
+    background-color: #d3e2d6;
+    border-bottom: 1px solid #9db6a4;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    color: #173b2b;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    margin-left: auto;
+}
+
+.nav-links a {
+    color: #173b2b;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #477158;
+}
+
+#menu-check {
+    display: none;
+}
+
+.menu-button {
+    display: none;
+    color: #173b2b;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.navigation-task {
+    margin-top: 50px;
+    padding: 50px 5%;
+    background-color: #dce9df;
+}
+
+.navigation-task h2 {
+    color: #123d2b;
+    font-size: 40px;
+}
+
+@media (max-width: 767px) {
+    .nav-container {
+        flex-wrap: wrap;
+    }
+
+    .menu-button {
+        display: block;
+        margin-left: auto;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 15px;
+    }
+
+    #menu-check:checked + .menu-button + .nav-links {
+        display: flex;
+    }
+}
+
+.portfolio-task {
+    margin-top: 50px;
+    padding: 60px 0;
+    background-color: #e0ebe2;
+}
+
+.portfolio-task h2 {
+    margin: 20px 0 40px;
+    color: #123d2b;
+    font-size: 40px;
+}
+
+.projects h3 {
+    margin-bottom: 25px;
+    color: #174a32;
+}
+
+.project-card {
+    min-height: 170px;
+    margin-bottom: 25px;
+    padding: 25px;
+    background-color: #f7faf7;
+    border: 1px solid #b8cbbd;
+}
+
+.project-card h4 {
+    color: #174a32;
+}
+
+.project-card p {
+    color: #315441;
+    line-height: 1.5;
+}
+
+.portfolio-sidebar {
+    min-height: 300px;
+    padding: 25px;
+    background-color: #315e43;
+    color: white;
+}
+
+.portfolio-sidebar h3 {
+    margin-bottom: 30px;
+}
+
+.portfolio-sidebar p {
+    margin-bottom: 15px;
+}
+
+.footer {
+    padding: 25px;
+    background-color: #173b2b;
+    color: white;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .portfolio-task {
+        padding: 40px 0;
+    }
+
+    .portfolio-task h2 {
+        font-size: 32px;
+    }
+
+    .portfolio-sidebar {
+        margin-top: 20px;
+    }
+}
